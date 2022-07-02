@@ -6,7 +6,7 @@ import shell from 'shelljs'
 const program = new Command()
 
 program
-    .name('akr-cli')
+    .name('starter-cli')
     .description('CLI to some utilities')
     .version('1.0.0')
 
