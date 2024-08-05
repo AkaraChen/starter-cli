@@ -1,18 +1,16 @@
 #!/usr/bin/env node
 
-import { Command } from 'commander'
-import shell from 'shelljs'
+import { Command } from 'commander';
 
-const program = new Command()
+const program = new Command();
 
 program
     .name('starter-cli')
     .description('CLI to some utilities')
-    .version('1.0.0')
+    .version('1.0.0');
 
-program.command("greet")
-    .action(() => {
-        shell.echo("Hello, World!")
-    })
+program.command('greet').action(() => {
+    console.log('Hello, World!');
+});
 
-program.parse()
+program.parse();
